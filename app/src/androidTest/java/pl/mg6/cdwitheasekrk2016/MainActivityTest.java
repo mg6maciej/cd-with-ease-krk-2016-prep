@@ -17,6 +17,6 @@ public class MainActivityTest {
 
     @Test
     public void shouldShowHelloWorld() {
-        onView(withId(R.id.text_view)).check(matches(withText("Hello World")));
+        onView(withId(R.id.text_view)).check(matches(withText("Hello World!")));
     }
 }
