@@ -18,6 +18,7 @@ before_script:
   - adb shell input keyevent 82
 
 after_success:
+  - scripts/create_release_notes.sh
   - ./gradlew crashlyticsUploadDistributionDebug
 
 notifications:
